@@ -1,0 +1,97 @@
+
+.baro-story-cards-feature {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    border-bottom: 8px solid #222222;
+    padding: 50px 0px;
+}
+.baro-story-cards-feature span {
+    color: var(--yellow);
+}
+.baro-story-cards-feature__left { 
+    align-items: flex-start;
+    margin-left: 150px; 
+}
+.baro-story-cards-feature__left h2 {
+    margin-top: 30px;    
+}
+.baro-story-cards-feature__right h2 {
+    padding-left: 12px;
+}
+.baro-story-cards-feature__right {
+    margin-right: 150px;
+}
+.baro-story-cards-feature__right img, .baro-story-cards-feature__left img {
+    width: 480px;
+    height: 360px;
+    z-index: 2;  
+}
+.baro-story-cards-feature__left h5{
+    font-size: 32px;
+    font-weight: 500;
+    padding-left: 12px;
+}
+
+@media only screen and (max-width:949px) and (min-width: 550px){
+    .baro-story-cards-feature {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+    }
+    .special2 {
+        padding-bottom: 0px;
+    }
+    .baro-story-cards-feature__left, .baro-story-cards-feature__right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .plus {
+        margin-top: 50px;
+    }
+    .special {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width:550px) and (min-width: 0px){
+    .baro-story-cards-feature {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+    }
+    .baro-story-cards-feature__left, .baro-story-cards-feature__right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .plus {
+        margin-top: 50px;
+    }
+    .special {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .special2 {
+        padding-bottom: 0px;
+    }
+    .baro-story-cards-feature__right img, .baro-story-cards-feature__left img {
+        width: 320px;
+        height: 240px;
+        z-index: 2;  
+    } 
+}
