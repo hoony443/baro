@@ -30,7 +30,7 @@
 .baro-story-faq button i {
     padding-left: 10px;
 }
-.faq-answer--1, .faq-answer--2, .faq-answer--3 {
+.faq-answer {
     display: flex;
     justify-content: flex-start; 
     margin: 5px;
