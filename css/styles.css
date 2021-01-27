@@ -42,7 +42,7 @@ h1 {
     .baro-story-cards button {
         font-size: 23px;
     }
-    .baro-story-faq button {
+    .baro-story-faq .faq-qustion {
         font-size: 23px;
     }
 }
@@ -71,7 +71,10 @@ h1 {
     .baro-story-cards button {
         font-size: 15px;
     }
-    .baro-story-faq button {
+    .baro-story-cards__in button {
+        font-size: 15px;
+    }
+    .baro-story-faq .faq-qustion {
         font-size: 15px;
     }
     .baro-story-footer div {
@@ -104,7 +107,10 @@ h1 {
     .baro-story-cards button {
         font-size: 12px;
     }
-    .baro-story-faq button {
+    .baro-story-cards__in button {
+        font-size: 12px;
+    }
+    .baro-story-faq .faq-qustion {
         font-size: 12px;
     }
     .baro-story-footer div {
