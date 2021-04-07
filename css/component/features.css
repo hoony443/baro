@@ -1,10 +1,11 @@
 
 .baro-story-cards-feature {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center; 
     border-bottom: 8px solid #222222;
-    padding: 50px 0px;
+    padding: 75px 0px;
+    flex-wrap: wrap; 
 }
 .baro-story-cards-feature span {
     color: var(--yellow);
@@ -41,25 +42,62 @@
 .baro-story-cards-feature__top--people h5{
     margin: 0% 5%;
     padding: 2px;
-}
-.baro-story-cards-feature__left { 
-    align-items: flex-start;
-    margin-left: 150px; 
-    margin-right: 65px;
+    font-size: 20px;
+    line-height: 26px;
 }
 
+.baro-story-cards-feature__top--people--feature {
+    width: 450px;
+    margin: 0 30px;
+}
+.baro-story-cards-feature__left {
+    width: 700px;
+    margin-right: 300px;
+}
 .baro-story-cards-feature__right {
-    margin-right: 150px;
-    margin-left: 65px;
+    width: 550px;
+}
+.baro-story-cards-feature .plus1 {
+    width: 550px;
+}
+.baro-story-cards-feature .plus2 {
+    width: 700px;
 }
 .baro-story-cards-feature__right img, .baro-story-cards-feature__left img {
-    width: 480px;
-    height: 360px;
+    width: 100%;
     z-index: 2;  
 }
 .baro-story-cards-feature__left h2, .baro-story-cards-feature__right h2{
     margin-block-start: 45px;
 }
+.mark {
+    font-weight: 600;
+    color: tomato;
+    display: inline;
+}
+.y {
+    color: var(--yellow);
+}
+
+
+@media only screen and (max-width:1265px) and (min-width: 0px){ 
+    .special {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .baro-story-cards-feature .plus2 {
+        margin-bottom: 75px;
+    }
+}
+
+@media only screen and (max-width:700px) and (min-width: 0px){ 
+    .baro-story-cards-feature .plus1, .baro-story-cards-feature .plus2 {
+        width: 100%;
+    }
+}
+
 
 @media only screen and (max-width:949px) and (min-width: 550px){
     .baro-story-cards-feature {
@@ -69,7 +107,7 @@
         align-items: center; 
     }
     .special2 {
-        padding-bottom: 0px;
+        padding-bottom: 0px; 
     }
     .baro-story-cards-feature__left, .baro-story-cards-feature__right {
         display: flex;
@@ -96,6 +134,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center; 
+        padding: 25px 0;
     }
     .baro-story-cards-feature__left, .baro-story-cards-feature__right {
         display: flex;
@@ -108,12 +147,6 @@
     .plus {
         margin-top: 50px;
     }
-    .special {
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
-    }
     .special2 {
         padding-bottom: 0px;
     }
@@ -122,4 +155,15 @@
         height: 240px;
         z-index: 2;  
     } 
+    .baro-story-cards-feature__top--people--feature, .baro-story-cards-feature__top--people h5 {
+        margin: 0;
+        text-align: center;
+        width: 100%;
+    } 
+    .baro-story-header, .main-image {
+        height: 600px;
+    }
+    .baro-story-cards-feature__top, .baro-story-cards-feature {
+        margin: 10px 10px;
+    }
 }
